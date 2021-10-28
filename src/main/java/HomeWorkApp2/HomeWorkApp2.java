@@ -8,7 +8,6 @@ public class HomeWorkApp2 {
         System.out.println(trueOrFalse(0));
         String a = new String();
         printSomething("Проверка печати", 5);
-        System.out.println(leapYear(100));
     }
 
     public static boolean summaVPredelakh (int a, int b) {
@@ -42,17 +41,5 @@ public class HomeWorkApp2 {
             System.out.println(a);
             c++;
         }
-    }
-
-    public static boolean leapYear (int a) {
-        var b = a % 100;
-        if(a % 400 == 0) {
-            return true;
-        } else if (a % 100 == 0){
-            return false;
-        } else if (a % 4 == 0) {
-            return  true;
-        }
-        return false;
     }
 }
